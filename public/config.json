@@ -1,0 +1,197 @@
+{
+  "settings": {
+    "foreground_color": [
+      0,
+      77,
+      108
+    ],
+    "max_offset": 0.5,
+    "opacity": 0.75,
+    "point_width_desktop": 6,
+    "point_width_mobile": 6,
+    "rnd_offset": 0.15,
+    "scroller_threshold": 0.7
+  },
+  "slides": [
+    {
+      "body": "These are 15,000 dots.",
+      "color": {
+        "type": "identity"
+      },
+      "layout": {
+        "type": "rectangle"
+      }
+    },
+    {
+      "body": "Here some of them are highlighted.",
+      "color": {
+        "background_opacity": 0.4,
+        "highlight_color": [
+          0,
+          0,
+          0
+        ],
+        "type": "inclusion_highlight",
+        "value": [
+          true
+        ],
+        "variable": "cat0"
+      },
+      "layout": {
+        "type": "previous"
+      }
+    },
+    {
+      "body": "Some others are highlighted",
+      "color": {
+        "background_opacity": 0.4,
+        "highlight_color": [
+          0,
+          0,
+          0
+        ],
+        "type": "inclusion_highlight",
+        "value": [
+          true
+        ],
+        "variable": "cat1"
+      },
+      "layout": {
+        "type": "previous"
+      }
+    },
+    {
+      "body": "Now we place them on a map of Russia.",
+      "color": {
+        "type": "identity"
+      },
+      "layout": {
+        "feature_offset": false,
+        "map": "map1",
+        "point_width_desktop": 3,
+        "point_width_mobile": 3,
+        "type": "map"
+      }
+    },
+    {
+      "body": "What about a cartogram?",
+      "color": {
+        "type": "identity"
+      },
+      "layout": {
+        "feature_offset": true,
+        "map": "map2",
+        "point_width_desktop": 3,
+        "point_width_mobile": 3,
+        "type": "map"
+      }
+    },
+    {
+      "body": "We can also look at age distributions.",
+      "color": {
+        "type": "identity"
+      },
+      "labels": {
+        "type": "age",
+        "unit": "years"
+      },
+      "layout": {
+        "type": "age_histogram",
+        "center_histogram": false
+      }
+    },
+    {
+      "body": "And again: highlight some of the dots.",
+      "color": {
+        "background_opacity": 0.4,
+        "highlight_color": [
+          0,
+          0,
+          0
+        ],
+        "type": "inclusion_highlight",
+        "value": [
+          25
+        ],
+        "variable": "age"
+      },
+      "labels": {
+        "type": "age",
+        "unit": "years"
+      },
+      "layout": {
+        "type": "previous",
+        "center_histogram": false
+      }
+    },
+    {
+      "body": "We can also highlight more than one value per variable (see config.json).",
+      "color": {
+        "background_opacity": 0.4,
+        "highlight_color": [
+          0,
+          0,
+          0
+        ],
+        "type": "inclusion_highlight",
+        "value": [
+          "a", "b"
+        ],
+        "variable": "cat3"
+      },
+      "labels": {
+        "type": "age",
+        "unit": "years"
+      },
+      "layout": {
+        "type": "age_histogram",
+        "centerHistogram": true,
+        "order_value": [
+          [
+            "a", "b"
+          ]
+        ],
+        "order_variable": "cat3"
+      }
+    },
+    {
+      "body": "Or we focus on these dots.",
+      "color": {
+        "background_opacity": 0.4,
+        "highlight_color": [
+          0,
+          0,
+          0
+        ],
+        "type": "inclusion_highlight",
+        "value": [
+          "c"
+        ],
+        "variable": "cat3"
+      },
+      "labels": {
+        "type": "age",
+        "unit": "years"
+      },
+      "layout": {
+        "type": "age_histogram",
+        "centerHistogram": true,
+        "order_value": [
+          [
+            "c"
+          ]
+        ],
+        "order_variable": "cat3"
+      }
+    },
+    {
+      "body": "That's all.",
+      "color": {
+        "type": "identity"
+      },
+      "layout": {
+        "type": "random"
+      }
+    }
+  ]
+}

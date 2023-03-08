@@ -1,0 +1,22 @@
+{
+  "name": "dot-cloud",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/svelte-scroller": "^2.0.7",
+    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "@turf/turf": "^6.5.0",
+    "d3": "^7.8.2",
+    "flubber": "^0.4.2",
+    "lodash-es": "^4.17.21",
+    "regl": "^2.1.0",
+    "svelte": "^3.55.1",
+    "vite": "^4.1.0"
+  }
+}
